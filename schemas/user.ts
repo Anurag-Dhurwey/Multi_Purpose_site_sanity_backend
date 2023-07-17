@@ -4,19 +4,29 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'name',
+      title: 'Name',
+      type: 'string'
+    },
+    {
       name: 'email',
       title: 'Email',
-      type: 'email',
+      type: 'string'
     },
     {
-      name: 'userName',
-      title: 'UserName',
+      name: 'image',
+      title: 'Image',
+      type: 'url'
+    },
+    {
+      // this is only if you use credentials provider
+      name: 'password',
       type: 'string',
+      hidden: true
     },
     {
-      name: 'profileImg',
-      title: 'ProfileImg',
-      type: 'image',
+      name: 'emailVerified',
+      type: 'datetime',
     },
     {
       name: 'bio',
@@ -32,16 +42,6 @@ export default {
       name: 'link',
       title: 'Link',
       type: 'url',
-    },
-    {
-      name: 'status',
-      title: 'Status',
-      type: 'object',
-      fields:[
-        {name: 'vip', title: 'Vip', type: 'boolean'},
-        {name: 'isVerified', title: 'IsVerified', type: 'boolean'},
-      ]
-      
-    },
+    }
   ],
 }
