@@ -35,7 +35,7 @@ export default {
       name: 'likes',
       title: 'Likes',
       type: 'array',
-      of: [{type: 'like'}],
+      of: [{type: 'postedBy'}],
     },
     {
       name: 'comments',

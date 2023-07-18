@@ -6,23 +6,23 @@ export default {
     {
       name: 'name',
       title: 'Name',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'email',
       title: 'Email',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'image',
       title: 'Image',
-      type: 'url'
+      type: 'url',
     },
     {
       // this is only if you use credentials provider
       name: 'password',
       type: 'string',
-      hidden: true
+      hidden: true,
     },
     {
       name: 'emailVerified',
@@ -42,6 +42,17 @@ export default {
       name: 'link',
       title: 'Link',
       type: 'url',
-    }
+    },
+    {
+      name: 'likedPosts',
+      title: 'Liked Posts',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to:[{type:'post'}]
+        },
+      ],
+    },
   ],
 }
