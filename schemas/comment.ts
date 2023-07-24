@@ -4,9 +4,19 @@ export default {
     type: 'object',
     fields: [
       {
-        name: 'postedBy',
-        title: 'PostedBy',
-        type: 'postedBy'
+        name: 'userId',
+        title: '_id',
+        type: 'string',
+      },
+      {
+        name: 'name',
+        title: 'Name',
+        type: 'string',
+      },
+      {
+        name: 'email',
+        title: 'Email',
+        type: 'string',
       },
       {
         name: 'comment',

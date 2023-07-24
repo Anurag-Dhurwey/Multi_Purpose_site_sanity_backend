@@ -49,9 +49,9 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'reference',
-          to:[{type:'post'}]
-        },
+          type: 'string',
+          name:'postId'
+        }
       ],
     },
   ],
