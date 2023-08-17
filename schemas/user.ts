@@ -54,44 +54,62 @@ export default {
         },
       ],
     },
-   {
-    name:'connections'
-    ,title:'Connections',
-    type:'object',
-    fields:[
-      {
-        name: 'connectedUsr',
-        title: 'Connected Users',
-        type: 'array',
-        of: [
-          {
-            type: 'object',
-            fields: [
-              {name: 'userId', type: 'string', title: 'userId'},
-              {name: 'name', type: 'string', title: 'name'},
-              {name: 'img', type: 'string', title: 'img'},
-              {name: 'mail', type: 'string', title: 'email'},
-            ],
-          },
-        ],
-      },
-      {
-        name: 'requests',
-        title: 'Requests',
-        type: 'array',
-        of: [
-          {
-            type: 'object',
-            fields: [
-              {name: 'userId', type: 'string', title: 'userId'},
-              {name: 'name', type: 'string', title: 'name'},
-              {name: 'img', type: 'string', title: 'img'},
-              {name: 'mail', type: 'string', title: 'email'},
-            ],
-          },
-        ],
-      },
-    ]
-   }
-  ],
+    {
+      name: 'connections',
+      title: 'Connections',
+      type: 'object',
+      fields: [
+        {
+          name: 'connected',
+          title: 'Connected Users',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {name: 'userId', type: 'string', title: 'userId'},
+                {name: 'name', type: 'string', title: 'name'},
+                {name: 'img', type: 'string', title: 'img'},
+                {name: 'mail', type: 'string', title: 'email'},
+              ],
+            },
+          ],
+        },
+        {
+          name: 'requests_got',
+          title: 'Requests got',
+          type: 'array',
+
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {name: 'userId', type: 'string', title: 'userId'},
+                {name: 'name', type: 'string', title: 'name'},
+                {name: 'img', type: 'string', title: 'img'},
+                {name: 'mail', type: 'string', title: 'email'},
+              ],
+            },
+          ],
+        },
+        {
+          name: 'requests_sent',
+          title: 'Requests sent',
+          type: 'array',
+
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {name: 'userId', type: 'string', title: 'userId'},
+                {name: 'name', type: 'string', title: 'name'},
+                {name: 'img', type: 'string', title: 'img'},
+                {name: 'mail', type: 'string', title: 'email'},
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ]
 }
