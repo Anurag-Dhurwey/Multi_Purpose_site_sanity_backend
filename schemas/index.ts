@@ -5,5 +5,6 @@ import post from "./post";
 import postedBy from "./postedBy";
 import user from "./user";
 import verification_token from "./verification_token";
+import connections from "./connections";
 
-export const schemaTypes = [user,account,verification_token,post,comment,postedBy]
+export const schemaTypes = [user,account,verification_token,post,comment,postedBy,connections]
