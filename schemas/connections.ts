@@ -20,13 +20,7 @@ export default {
 
       of: [
         {
-          type: 'object',
-          fields: [
-            {name: 'userId', type: 'string', title: 'userId'},
-            {name: 'name', type: 'string', title: 'name'},
-            {name: 'img', type: 'string', title: 'img'},
-            {name: 'mail', type: 'string', title: 'email'},
-          ],
+          type: 'userMinData',
         },
       ],
     },
@@ -37,13 +31,7 @@ export default {
 
       of: [
         {
-          type: 'object',
-          fields: [
-            {name: 'userId', type: 'string', title: 'userId'},
-            {name: 'name', type: 'string', title: 'name'},
-            {name: 'img', type: 'string', title: 'img'},
-            {name: 'mail', type: 'string', title: 'email'},
-          ],
+          type: 'userMinData'
         },
       ],
     },
@@ -53,13 +41,7 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'object',
-          fields: [
-            {name: 'userId', type: 'string', title: 'userId'},
-            {name: 'name', type: 'string', title: 'name'},
-            {name: 'img', type: 'string', title: 'img'},
-            {name: 'mail', type: 'string', title: 'email'},
-          ],
+          type: 'userMinData'
         },
       ],
     },
