@@ -66,9 +66,3 @@ export default {
   ],
 }
 
-// type typeofarry = {
-//   userId: string
-//   name: string
-//   mail: string
-//   img: string
-// }
