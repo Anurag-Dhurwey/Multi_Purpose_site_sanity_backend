@@ -6,36 +6,12 @@ export default {
     {
       name: 'userOne',
       title: 'userOne',
-      type: 'object',
-      fields: [
-        {
-          name: 'userId',
-          title: 'userId',
-          type: 'string',
-        },
-        {
-          name: 'email',
-          title: 'Email',
-          type: 'string',
-        },
-      ],
+      type: 'user_ref'
     },
     {
       name: 'userTwo',
       title: 'userTwo',
-      type: 'object',
-      fields: [
-        {
-          name: 'userId',
-          title: 'userId',
-          type: 'string',
-        },
-        {
-          name: 'email',
-          title: 'Email',
-          type: 'string',
-        },
-      ],
+      type: 'user_ref'
     },
     {
       name: 'chat_messages',
@@ -45,15 +21,15 @@ export default {
         {
           type: 'object',
           fields: [
-            {name: 'sender_id', title: 'sender_id', type: 'string'},
-            {name: 'receiver_id', title: 'receiver_id', type: 'string'},
+            {name: 'sender', title: 'sender', type: 'user_ref'},
+            {name: 'receiver', title: 'receiver', type: 'user_ref'},
             {name: 'message', title: 'message', type: 'string'},
             {
               name: 'date_time',
               title: 'Date_Time',
               type: 'datetime',
               options: {
-                dateFormat: 'YYYY-MM-DD HH:mm',
+                dateFormat: 'YYYY-MM-DD',
                 timeFormat: 'HH:mm',
               },
               initialValue: () => new Date().toISOString(),

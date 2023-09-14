@@ -44,13 +44,15 @@ export default {
       type: 'url',
     },
     {
-      name: 'likedPosts',
+      name: 'liked_posts',
       title: 'Liked Posts',
       type: 'array',
       of: [
         {
-          type: 'string',
-          name: 'postId',
+          name: 'post',
+          title: 'post_data',
+          type: 'object',
+          fields: [{name:"post",type:"post_ref"}],
         },
       ],
     },

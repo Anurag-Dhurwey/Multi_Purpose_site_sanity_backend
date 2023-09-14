@@ -14,7 +14,7 @@ export default {
     {
       name: 'postedBy',
       title: 'PostedBy',
-      type: 'postedBy',
+      type: 'user_ref',
     },
     {
       name: 'caption',
@@ -35,28 +35,7 @@ export default {
       name: 'likes',
       title: 'Likes',
       type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            {
-              name: 'userId',
-              title: '_id',
-              type: 'string',
-            },
-            {
-              name: 'name',
-              title: 'Name',
-              type: 'string',
-            },
-            {
-              name: 'email',
-              title: 'Email',
-              type: 'string',
-            },
-          ],
-        },
-      ],
+      of: [{type: 'like'}],
     },
     {
       name: 'comments',

@@ -4,23 +4,20 @@ export default {
   type: 'document',
   fields: [
     {
-      name:  'userId',
-      title:'ID',
-      type:'string'
+      name: 'user',
+      title: 'User',
+      type: 'user_ref',
     },
-    {
-        name:  'email',
-        title:'Email',
-        type:'string'
-      },
     {
       name: 'requests_got',
       title: 'Requests got',
       type: 'array',
 
       of: [
-        {
-          type: 'userMinData',
+        {name:"user",
+        title:"User",
+        type: 'object',
+        fields: [{name:"user",type:"user_ref"}],
         },
       ],
     },
@@ -30,8 +27,10 @@ export default {
       type: 'array',
 
       of: [
-        {
-          type: 'userMinData'
+        {name:"user",
+        title:"User",
+        type: 'object',
+        fields: [{name:"user",type:"user_ref"}],
         },
       ],
     },
@@ -40,8 +39,10 @@ export default {
       title: 'Connected Users',
       type: 'array',
       of: [
-        {
-          type: 'userMinData'
+        {name:"user",
+        title:"User",
+        type: 'object',
+        fields: [{name:"user",type:"user_ref"}],
         },
       ],
     },

@@ -4,14 +4,9 @@ export default {
   title: 'Asset',
   fields: [
     {
-      name: 'email',
-      type: 'string',
-      title: 'email',
-    },
-    {
-      name: 'userId',
-      type: 'string',
-      title: 'userId',
+      name: 'postedBy',
+      title: 'PostedBy',
+      type: 'user_ref',
     },
     {
       name: 'assets',
